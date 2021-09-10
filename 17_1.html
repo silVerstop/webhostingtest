@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" name="viewport" content="width = divice-width, 
+            inittion-scale = 1.0,minimum-scale=1.0, user-scalable=no"/>
+        <title></title>
+        <style>
+            *{  
+                margin : 0;
+                padding : 0;}
+            
+                .h_content{
+                height: 40px;
+                background-color: rgb(255, 189, 102);
+                text-align: center;
+                position:relative;
+                }
+                .h_content .first{
+                    width : 80px;
+                    height : 30px;
+                    position:absolute;
+                    left : 10px; top : 5px;
+                    background-color: rgb(255, 223, 80);
+                    text-decoration: none;
+                    border-radius: 5px;; 
+                    line-height: 30px;
+                    display: block;
+                    color:white;
+                    display: none;
+                }
+                #toggle{
+                    display: none;
+                }
+       
+                .gnb_wrap #gnb{
+                    width: 100%;
+                    height : 100%;
+                }
+                .gnb_wrap #gnb ul{
+                    width: 100%;
+                    height : 100%;
+                    overflow: hidden;
+                }
+                .gnb_wrap #gnb ul li{
+                    text-decoration: none;
+                    list-style: none;
+                    float: left;
+                    width : 25%;
+                    height: 50%;
+                    text-align: center;
+                    background-color: rgb(171, 165, 212);
+                    border: 1px solid white;
+                    border-radius: 7px;
+                    box-sizing: border-box;
+                }               
+                 .gnb_wrap #gnb ul li a{
+                    text-decoration: none;
+                    color :white;
+                 }
+                 .gnb_wrap{
+                    height : 75px;
+                    border: 5px solid gray;
+                    display: none;
+                }
+   
+                #toggle:checked + .gnb_wrap {
+                  display: block;
+
+                }
+          
+                .h_content .last{
+                    width : 50px;
+                    height : 30px;
+                    position:absolute;
+                    right : 10px; top : 5px;
+                    background-color: rgb(255, 223, 80);
+                    text-decoration: none;
+                    border-radius: 5px;; 
+                    line-height: 30px;
+                    display: block;
+                    color:white;
+                    cursor: pointer;
+                }
+           
+                section{
+                    padding :10px;
+                }
+                #lnb{
+                    height:45px;
+                    padding : 0px;
+                }
+                #lnb ul{
+                    width : 100%;
+                    height: 100%;
+                    overflow: hidden;
+
+                }
+                #lnb ul li{
+                    list-style:none;
+                    width : 20%;
+                    height: 100%;
+                    background-color: rgb(173, 173, 126);
+                    font-weight: bold;
+                    color : white;
+                    float : left;
+                    border : 1px solid white;
+                    box-sizing: border-box;
+                    text-align: center;
+                    line-height : 45px;
+                }
+                section hr{
+                    margin : 10px 0;
+                }
+                section .maintext{
+                    color : rgb(29, 141, 216);
+                    font-weight : bold;
+                    margin-bottom : 10px;
+                }
+                section .subtext{
+                    background-color: beige;
+                }
+                
+
+        </style>
+
+    </head>
+    <body>
+
+        <header>
+            <div class="h_content">
+                <a href = "#" class="first" >category</a>
+                <h2>Mobile</h2>
+                <label class="last" for="toggle" onclick="">menu</label>
+            </div>
+            <input type = "checkbox" id="toggle"/>
+            <div class = "gnb_wrap">
+                <div id="gnb">
+                    <ul>
+                        <li><a href = "#">gnb1</a></li>
+                        <li><a href = "#">gnb2</a></li>
+                        <li><a href = "#">gnb3</a></li>
+                        <li><a href = "#">gnb4</a></li>
+                        <li><a href = "#">gnb5</a></li>
+                        <li><a href = "#">gnb6</a></li>
+                        <li><a href = "#">gnb7</a></li>
+                        <li><a href = "#">gnb8</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="lnb">
+                <ul>
+                    <li>lnb1</li>
+                    <li>lnb2</li>
+                    <li>lnb3</li>
+                    <li>lnb4</li>
+                    <li>lnb5</li>
+                </ul>
+            </div>
+        </header>
+        <section>
+      
+            <h2>하이서울브랜드</h2>
+            <hr/>
+            <p class = "maintext">서울시가 인정한최고의 공동브랜드 하이서울브랜드!<br/>서울을 대표하는 믿을 수 있는 우수기업브랜드 하이서울이 있습니다.</p>
+            <p class = "subtext">하이서울브랜드하히아ㅓ이ㅏ리ㅏㄴ어;리ㅏㅁㄴ;이람;ㅣ낭리낭리ㅏㅓㅣㅏㅣㅏㅣㅏㅣㅏㅣㅏㅣㅏㅣㅏㅣ마너미ㅏㄴ
+                니ㅏ러미나얾;니아ㅓㄹ;ㅁ니아럼;ㅣ나얼마니얼미나얼;ㅁ나ㅣㅇ리나ㅓ쟈대ㅑㅓ쟈ㅐㅑㅐㅑㅕㅐ랴내ㅑㅇ러내ㅑ어
+                ㄴ어ㅏ러니ㅏㅇ러ㅣ냐더라니아러내ㅑㅇㄹ더ㅏ,느ㅜㅡㄹ나ㅓ아ㅣㅓ내댜ㅓ리나ㅓㅇ리나어ㅐ냐더랴너아ㅓㅣ나어댄
+                냐ㅓㅐ냐ㅓ디ㅏㅓㅣㅏㅓㅣㅏㅓㅐ랴얼니;미아러냐ㅐ;ㅐㅓㄷ라ㅣ;ㅁ니ㅏㅓㄻ내ㅔ애랴ㅓㄴ다ㅣ;ㅣㅏㅓㅏ락가가가ㅏ가
+                ㅇㄹ내ㅑㅇ레ㅐㅑㅝㅏㅓㅏ;미ㅏㅓㅏㅣ;니ㅏㅓㅇ랴ㅐ네애ㅑㅕㅑ저다라;니ㅏ터ㅏㅣ;이ㅏㅓㅣㅏㅓ;ㅣㅏ어ㅏㅓㅑㅐ;
+
+            </p>
+        </section>
+
+    </body>
+
+</html>
